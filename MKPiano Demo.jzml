@@ -1,0 +1,1313 @@
+<JZML>
+<PROJECT version="5400" width="1024" height="724" osc_target="-1" midi_target="-1" kbmouse_target="-1" skin="Flat"/>
+<WINDOW class="JAZZINTERFACE" text="Interface 2" x="0" y="0" width="1024" height="724" id="2" state="1" group="0" font="tahoma,11,0" >
+<WINDOW class="Container" text="MKPiano" x="24" y="21" width="804" height="255" id="50" state="5" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="20480" label="1" tabbar="1" meta="0">
+<WINDOW class="Container" text="_" x="-8" y="-8" width="804" height="255" id="1" state="5" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" label="1" tabbar="1" meta="0">
+<WINDOW class="Container" text="KeyboardContainer" x="32" y="-8" width="764" height="255" id="36" state="5" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8388608" label="1" tabbar="1" meta="0">
+<WINDOW class="Canvas" text="KeyboardCanvas1" x="-3740" y="0" width="2992" height="239" id="7" state="5" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" redrawMode="1" touchSupport="2">
+<VARIABLE name="numOctaves=" value="4" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas1/numOctaves" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="lowestOctave=" value="-2" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas1/lowestOctave" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,28009,26465" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="needsClear=" value="0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas1/needsClear" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onRedraw()" script="redraw(getobject());" trigger_script="" trigger_type="255" trigger_name="onRedraw" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas1/onRedraw" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="onCursorDown(cursor,hit,x,y)" script="cursorDown(getobject(), cursor, hit, x, y);" trigger_script="" trigger_type="255" trigger_name="onCursorDown" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas1/onCursorDown" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="onCursorUp(cursor,hit,x,y)" script="cursorUp(getobject(), cursor, hit, x, y);" trigger_script="" trigger_type="255" trigger_name="onCursorUp" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas1/onCursorUp" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="Canvas" text="KeyboardCanvas2" x="-748" y="0" width="2992" height="239" id="8" state="5" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" redrawMode="1" touchSupport="2">
+<VARIABLE name="lowestOctave=" value="2" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas2/lowestOctave" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,28009,26465" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="numOctaves=" value="4" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas2/numOctaves" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="needsClear=" value="0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas2/needsClear" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onRedraw()" script="redraw(getobject());" trigger_script="" trigger_type="255" trigger_name="onRedraw" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas2/onRedraw" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="onCursorDown(cursor,hit,x,y)" script="cursorDown(getobject(), cursor, hit, x, y);" trigger_script="" trigger_type="255" trigger_name="onCursorDown" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas2/onCursorDown" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="onCursorUp(cursor,hit,x,y)" script="cursorUp(getobject(), cursor, hit, x, y);" trigger_script="" trigger_type="255" trigger_name="onCursorUp" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas2/onCursorUp" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="Container" text="CursorList" x="0" y="0" width="156" height="165" id="391" state="0" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" label="1" tabbar="1" meta="0">
+<WINDOW class="Container" text="_private" x="0" y="0" width="32" height="32" state="0" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" label="1" tabbar="1" meta="0">
+<VARIABLE name="cursors=" value="-1" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/KeyboardContainer/CursorList/_private/cursors" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="17325,17896,17056" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="keys=" value="-1" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/KeyboardContainer/CursorList/_private/keys" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="velocities=" value="-1" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/KeyboardContainer/CursorList/_private/velocities" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<SCRIPT name="clear()" script="_private.cursors = {-1};
+_private.keys = {-1};
+_private.velocities = {-1};
+ 
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/CursorList/clear" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="isEmpty()" script="return sizeof(_private.cursors) == 1 && _private.cursors[0] == -1;" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/CursorList/isEmpty" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="init()" script="clear();" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/CursorList/init" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="keyForCursor(cursor)" script="decl i;
+for (i = 0; i < sizeof(_private.cursors); i++) {
+	if (_private.cursors[i] == cursor) {
+		return _private.keys[i];
+	}
+}
+return -1;" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/CursorList/keyForCursor" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="isPressed(key)" script="return velocityForKey(key) > 0;" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/CursorList/isPressed" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="remove(key)" script="if (isEmpty()) return;
+
+decl found = -1;
+
+if (sizeof(_private.cursors) == 1) {
+	if (_private.keys[0] == key) {
+		found = key;
+	}
+	clear();
+} else {
+	decl cursorsCopy = {-1};
+	decl keysCopy = {-1};
+	decl velsCopy = {-1};
+	decl i, j;
+	for (i = 0; i < sizeof(_private.keys); i++) {
+		if (_private.keys[i] != key) {
+			if (j == 0) {
+				cursorsCopy = { _private.cursors[i] };
+				keysCopy = { _private.keys[i] };
+				velsCopy = {_private.velocities[i]};
+			} else {
+				cursorsCopy[j] = _private.cursors[i];
+				keysCopy[j] = _private.keys[i];
+				velsCopy[j] = _private.velocities[i];
+			}
+			j++;
+		} else {
+			found = key;
+		}
+	}
+	_private.cursors = cursorsCopy;
+	_private.keys = keysCopy;
+	_private.velocities = velsCopy;
+}
+
+if (found == -1) {
+	Debug.print('<!> Could not remove key + ' + key + ' from cursor list because it could not be found');
+} else {
+	Debug.print('Removed key ' + found + ' from cursor list');
+}
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/CursorList/remove" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="pressedKeys()" script="return _private.keys;" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/CursorList/pressedKeys" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="add(cursor, key, velocity)" script="if (isEmpty()) {
+	_private.cursors = {cursor};
+	_private.keys = {key};
+	_private.velocities = {velocity};
+} else {
+	_private.cursors[sizeof(_private.cursors)] = cursor;
+	_private.keys[sizeof(_private.keys)] = key;
+	_private.velocities[sizeof(_private.velocities)] = velocity;
+}
+
+Debug.print('Added cursor ' + cursor + ' to cursor list with key ' + key + ' &  velocity ' + velocity);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/CursorList/add" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="velocityForKey(key)" script="decl i;
+for (i = 0; i < sizeof(_private.keys); i++) {
+	if (_private.keys[i] == key) {
+		return _private.velocities[i];
+	}
+}
+return 0;" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/CursorList/velocityForKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+</WINDOW>
+<WINDOW class="Container" text="OctaveScroller" x="0" y="0" width="32" height="32" id="392" state="0" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" label="1" tabbar="1" meta="0">
+<WINDOW class="Container" text="_private" x="0" y="0" width="32" height="32" state="0" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" label="1" tabbar="1" meta="0">
+<VARIABLE name="animationStartTime=" value="-1" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/KeyboardContainer/OctaveScroller/_private/animationStartTime" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,-19068,-10951" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="targetOctave=" value="3" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/KeyboardContainer/OctaveScroller/_private/targetOctave" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="currentOctave=" value="3" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/KeyboardContainer/OctaveScroller/_private/currentOctave" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="713,1,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onTime()" script="if (!isAnimating()) return;
+
+decl animationDuration = 0.33;
+decl animationProgress = (time - animationStartTime) / animationDuration;
+
+if (animationProgress >= 1) {
+	currentOctave = targetOctave;
+	KeyboardContainer.scrollKeyboards();
+	reset();
+	return;
+}
+
+decl easedProgress = 1 - pow((1 - animationProgress), 3); // Ease-Out Cubic 
+
+decl keyboards = keyboards();
+decl i;
+for (i = 0; i < sizeof(keyboards); i++) {
+	decl startFrame = frame(keyboards[i], currentOctave);
+	decl endFrame = frame(keyboards[i], targetOctave);
+	decl xOffset = startFrame[0] - ((startFrame[0] - endFrame[0]) * easedProgress);
+	setobjectrect(keyboards[i], {xOffset, endFrame[1], endFrame[2], endFrame[3]});
+}
+
+
+" trigger_script="time" trigger_type="0" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/OctaveScroller/_private/onTime" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="isAnimating()" script="return animationStartTime != -1;" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/OctaveScroller/_private/isAnimating" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="reset()" script="animationStartTime = -1;
+targetOctave = currentOctave;" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/OctaveScroller/_private/reset" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+</WINDOW>
+<SCRIPT name="getOctave()" script="return _private.currentOctave;" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/OctaveScroller/getOctave" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="init()" script="_private.reset();" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/OctaveScroller/init" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="scroll(newOctave, animated)" script="newOctave = floor(min(max(newOctave, -2), 8));
+if (newOctave == floor(getOctave())) return;
+if (_private.isAnimating()) return;
+
+decl lowestVisibleOctave = floor(getOctave());
+decl highestVisibleOctave = lowestVisibleOctave + _numberOfVisibleOctaves() - 1;
+if (highestVisibleOctave == 8 && newOctave > lowestVisibleOctave) return;
+
+KeyboardContainer.releaseAllKeys();
+if (animated) {
+	_private.targetOctave = newOctave;
+	_private.animationStartTime = time;
+} else {
+	_private.currentOctave = newOctave;
+	_private.targetOctave = newOctave;
+	KeyboardContainer.scrollKeyboards();
+}
+
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/OctaveScroller/scroll" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+</WINDOW>
+<WINDOW class="Container" text="KeyRedrawList" x="0" y="0" width="32" height="32" id="393" state="0" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" label="1" tabbar="1" meta="0">
+<WINDOW class="Container" text="_private" x="0" y="0" width="32" height="32" state="0" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" label="1" tabbar="1" meta="0">
+<VARIABLE name="queue=" value="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/KeyboardContainer/KeyRedrawList/_private/queue" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="-16512,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<SCRIPT name="init()" script="addAllKeys();" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/KeyRedrawList/init" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="add(key)" script="// If white key, add surrounding black keys, which must be redrawn 
+// because they cover adjacent black keys and will
+// be cleared when a white key is cleared.
+
+
+decl keysToAdd = {key};
+decl pitchClass = key % 12;
+decl isWhiteKey = {1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1};
+decl insertIndex = sizeof(keysToAdd);
+
+if (isWhiteKey[pitchClass]) {
+	if (pitchClass == 0) {
+		keysToAdd[insertIndex] = key + 1;
+	} else if (pitchClass == 2) {
+		keysToAdd[insertIndex] = {key - 1, key + 1};
+	} else if (pitchClass == 4) {
+		keysToAdd[insertIndex] = {key - 1}; 
+	} else if (pitchClass == 5) {
+		keysToAdd[insertIndex] = {key + 1};
+	} else if (pitchClass == 7) {
+		keysToAdd[insertIndex] = {key - 1, key + 1};
+	} else if (pitchClass == 9) {
+		keysToAdd[insertIndex] = {key - 1, key + 1};
+	} else if (pitchClass == 11) {
+		keysToAdd[insertIndex] = {key - 1};
+	}	
+}
+
+decl message = 'Added keys {';
+decl i;
+for (i = 0; i < sizeof(keysToAdd); i++) {
+
+	decl keyToAdd = keysToAdd[i];
+	if (keyToAdd < 0 || keyToAdd > 127) continue;
+	_private.queue[keyToAdd] = 1;
+
+	message += '' + keyToAdd;
+	if (i < sizeof(keysToAdd) - 1) {
+		message += ', ';
+	}
+}
+message += '} to redraw list';
+
+Debug.print(message);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/KeyRedrawList/add" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="remove(key)" script="// Returns 1 if key should be redrawn, or 0 if not
+
+decl shouldRedraw = _private.queue[key];
+_private.queue[key] = 0;
+return shouldRedraw;" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/KeyRedrawList/remove" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="addAllKeys()" script="_private.queue = fill(1, 1, 128);
+Debug.print('Added all keys to the redraw list');" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/KeyRedrawList/addAllKeys" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+</WINDOW>
+<WINDOW class="Canvas" text="KeyboardCanvas3" x="2244" y="0" width="2244" height="239" id="394" state="5" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" redrawMode="1" touchSupport="2">
+<VARIABLE name="numOctaves=" value="3" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas3/numOctaves" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="lowestOctave=" value="6" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas3/lowestOctave" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,28009,26465" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="needsClear=" value="0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas3/needsClear" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onRedraw()" script="redraw(getobject());" trigger_script="" trigger_type="255" trigger_name="onRedraw" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas3/onRedraw" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="onCursorDown(cursor,hit,x,y)" script="cursorDown(getobject(), cursor, hit, x, y);" trigger_script="" trigger_type="255" trigger_name="onCursorDown" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas3/onCursorDown" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="onCursorUp(cursor,hit,x,y)" script="cursorUp(getobject(), cursor, hit, x, y);" trigger_script="" trigger_type="255" trigger_name="onCursorUp" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas3/onCursorUp" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<SCRIPT name="frame(keyboard, octave)" script="decl visibleBounds = replace(getobjectrect(KeyboardContainer), {0,0}, 0) - {0, 0, 16, 16};
+
+
+decl octavesPerPage = _numberOfVisibleOctaves();
+decl numOctaves = getexpression(keyboard, 'numOctaves');
+decl numberOfPages = ceil(numOctaves / octavesPerPage);
+decl pianoWidth = visibleBounds[2] * numberOfPages;
+
+decl lowestOctave = getexpression(keyboard, 'lowestOctave') + 2;
+decl widthOfOctave = visibleBounds[2] / octavesPerPage;
+
+
+decl shiftedOctave = octave + 2;
+
+decl xOffset = -1 * widthOfOctave * shiftedOctave + (lowestOctave * widthOfOctave);
+
+return {xOffset, visibleBounds[1], pianoWidth, visibleBounds[3]};" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/frame" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="init()" script="OctaveScroller.init();
+KeyRedrawList.init();
+CursorList.init();
+
+KeyboardCanvas1.lowestOctave = -2;
+KeyboardCanvas1.numOctaves = 4;
+KeyboardCanvas2.lowestOctave = 2;
+KeyboardCanvas2.numOctaves = 4; 
+KeyboardCanvas3.lowestOctave = 6;
+KeyboardCanvas3.numOctaves = 3; 
+
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/init" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="cursorUp(keyboard, cursor, hit, x, y)" script="
+decl key = CursorList.keyForCursor(cursor);
+if (key == -1) {
+	if (hit == 0) {
+		Debug.print('Hits not on visible pixels are ignored');
+	} else {
+		Debug.print('<!> Could not locate key for cursor ' + cursor);
+	}
+	return;
+}
+
+decl velocity = CursorList.velocityForKey(key);
+if (!_canReleaseKey(key, velocity)) return;
+
+Debug.print('Key ' + key + ' was released for cursor ' + cursor);
+
+didReleaseKey(key);
+CursorList.remove(key);
+KeyRedrawList.add(key);
+canvas_refresh(keyboard);
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/cursorUp" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="cursorDown(keyboard, cursor, hit, x, y)" script="// Determine key. Hit is key + 1 because because hit 0 is recognized as no pixels.
+if (hit == 0) {
+	log('Cursor down ignored: hit id 0 is invalid');
+	return;
+} 
+decl key = hit - 1; 
+
+// Calculate key hit velocity based on percent location of y inside key content area
+decl velocity = touchVelocity(keyboard, key, y);
+
+if (!_canPressKey(key, velocity)) return;
+
+Debug.print('Key ' + key + ' was pressed with velocity ' + velocity);
+
+// Save
+CursorList.add(cursor, key, velocity);
+
+// Send output
+didPressKey(key, velocity);
+
+// Redraw
+KeyRedrawList.add(key);
+canvas_refresh(keyboard);
+
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/cursorDown" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="visibleKeyRange(keyboard)" script="decl lowestOctave = getexpression(keyboard, 'lowestOctave');
+decl numOctaves = getexpression(keyboard, 'numOctaves');
+decl lowestVisibleKey = max((lowestOctave + 2)  * 12, 0);
+decl highestVisibleKey = min(lowestVisibleKey + (numOctaves * 12), 128);
+return { lowestVisibleKey, highestVisibleKey };" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/visibleKeyRange" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="releaseAllKeys()" script="if (CursorList.isEmpty()) return;
+decl pressedKeys = CursorList.pressedKeys();
+decl i;
+for (i = 0; i < sizeof(pressedKeys); i++) {
+	CursorList.remove(pressedKeys[i]);
+	KeyRedrawList.add(pressedKeys[i]);
+	didReleaseKey(pressedKeys[i]);
+}
+redrawAll(0);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/releaseAllKeys" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="redraw(keyboard)" script="decl didClear = 0;
+if (needsClear(keyboard)) {
+	canvas_clear(keyboard);
+	didClear = 1;
+}
+
+// Key Size Calculations
+decl visibleBounds = replace(getobjectrect(getparent(keyboard)), {0, 0}, 0) - {0, 0, 16, 16};
+decl spacing = 4;
+decl numVisibleOctaves = _numberOfVisibleOctaves();
+decl numVisibleWhiteKeys = numVisibleOctaves * 7;
+decl keyWidth = (visibleBounds[2] - (spacing * numVisibleWhiteKeys)) / numVisibleWhiteKeys; 
+decl whiteKeyHeight = visibleBounds[3];
+decl blackKeyHeight = whiteKeyHeight / 2;
+decl visibleKeyRange = visibleKeyRange(keyboard);
+
+
+// Text configuration
+decl currentFontSize = 10;
+canvas_setTextBaseline(keyboard, textBaselineTop);
+canvas_setTextAlign(keyboard, textAlignCenter);
+canvas_setFontSize(keyboard, currentFontSize);
+
+
+// Draw White Keys
+decl tx = spacing/2;
+decl i;
+for (i = visibleKeyRange[0]; i < visibleKeyRange[1]; i++) {
+
+	if (!isWhiteKey(i)) continue;
+
+	if (KeyRedrawList.remove(i)) {
+
+		if (!didClear) {
+			canvas_clearRect(keyboard, tx, 0, keyWidth, whiteKeyHeight);
+		}
+		
+		decl velocity = CursorList.velocityForKey(i);
+		canvas_setFillStyle(keyboard, _colorForKey(i, velocity));
+		canvas_fillRect(keyboard, tx, 0, keyWidth, whiteKeyHeight);
+
+		// Add hit region below black key
+		drawRectanglePath(keyboard, tx, blackKeyHeight, keyWidth, whiteKeyHeight - blackKeyHeight);
+		canvas_addHitRegion(keyboard, 0, i + 1); // hitID = key + 1 because 0 is no hit region
+
+
+		// Draw Key Content	
+		decl contentInsets = {4, 8, 4, 4};
+		decl contenFrame = {
+			tx + contentInsets[0], 
+			blackKeyHeight + contentInsets[1], 
+			keyWidth - (contentInsets[0] + contentInsets[2]), 
+			whiteKeyHeight - blackKeyHeight - contentInsets[1] - contentInsets[3]
+		};
+
+		decl newFontSize = _fontSizeForKey(i, velocity);
+		if (newFontSize != currentFontSize) {
+			canvas_setFontSize(keyboard, newFontSize);
+			currentFontSize = newFontSize;
+		}
+
+		canvas_setFillStyle(keyboard, _titleColorForKey(i, velocity));
+		canvas_fillText(keyboard, _titleForKey(i, velocity), contenFrame[0] + contenFrame[2]/2, contenFrame[1], contenFrame[2]);
+	
+		// Draw octave label on C
+		if (i % 12 == 0) {
+			canvas_setFillStyle(keyboard, 0);
+			canvas_setTextBaseline(keyboard, textBaselineTop);
+			canvas_setTextAlign(keyboard, textAlignCenter);
+			decl octave = floor(i/12) - 2;
+			decl centerOfStem = keyWidth/4;
+			canvas_setFontSize(keyboard, 10);
+			currentFontSize = 10;
+			canvas_fillText(keyboard, '' + octave, tx + centerOfStem + 1, 8, keyWidth/2);
+		}
+
+	}
+
+	tx += keyWidth + spacing;		
+}
+
+
+// Draw BlackKeys
+
+// Number of keys to jump each black key
+decl blackKeyOffsets = {1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1};
+
+// Start centered in middle of first white key
+tx = spacing + keyWidth/2;
+
+for (i = visibleKeyRange[0]; i < visibleKeyRange[1]; i++) {
+
+	if (isWhiteKey(i)) continue;
+	
+	decl x = blackKeyXOffset(tx, i);
+
+	if (KeyRedrawList.remove(i)) {
+
+		if (!didClear) {
+			canvas_clearRect(keyboard, x, 0, keyWidth, blackKeyHeight);
+		}
+		
+		decl velocity = CursorList.velocityForKey(i);
+		drawRectanglePath(keyboard, x, 0, keyWidth, blackKeyHeight);
+		canvas_addHitRegion(keyboard, 0, i + 1); // hitID = key + 1 because 0 is no hit region
+		canvas_setFillStyle(keyboard, _colorForKey(i, velocity));
+		canvas_fill(keyboard);
+
+
+		decl newFontSize = _fontSizeForKey(i, velocity);
+		if (newFontSize != currentFontSize) {
+			canvas_setFontSize(keyboard, newFontSize);
+			currentFontSize = newFontSize;
+		}
+
+		canvas_setFillStyle(keyboard, _titleColorForKey(i, velocity));
+		canvas_fillText(keyboard, _titleForKey(i, velocity), x + (keyWidth / 2), 8, keyWidth);
+	}
+
+	tx += blackKeyOffsets[i % 12] * (keyWidth + spacing);
+}
+
+setNeedsClear(keyboard, 0);
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/redraw" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="reload()" script="releaseAllKeys();
+scrollKeyboards();
+KeyRedrawList.addAllKeys();
+redrawAll(1);
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/reload" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="keyboards()" script="return {
+	KeyboardCanvas1,
+	KeyboardCanvas2,
+	KeyboardCanvas3
+};" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/keyboards" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="scrollKeyboards()" script="decl keyboards = keyboards();
+decl octave = OctaveScroller.getOctave();
+decl i;
+for (i = 0; i < sizeof(keyboards); i++) {
+	setobjectrect(keyboards[i], frame(keyboards[i], octave));
+}
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/scrollKeyboards" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="redrawAll(setNeedsClear)" script="decl keyboards = keyboards();
+decl i;
+for (i = 0; i < sizeof(keyboards); i++) {
+	if (setNeedsClear) {
+		setNeedsClear(keyboards[i], 1);
+	}
+	canvas_refresh(keyboards[i]);
+}
+
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/redrawAll" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="touchVelocity(keyboard, key, y)" script="// Calculate dimensions
+decl keyboardHeight = getobjectrect(keyboard)[3];
+decl blackKeyHeight = keyboardHeight / 2;
+decl hitMinY, hitMaxY;
+
+
+// Constrain the hit area to make it easier to reach the top,
+// and easier to avoid black keys on white keys
+if (isWhiteKey(key)) {
+	hitMinY = blackKeyHeight + 32;
+	hitMaxY = keyboardHeight - 32;
+} else {
+	hitMinY = 16;
+	hitMaxY = blackKeyHeight - 32;
+}
+
+// Calculate touch location percent of height
+decl touchHeight = hitMaxY - hitMinY;
+decl touchLocationPercent = min(max(1 - ((y - hitMinY) / touchHeight), 0), 1);
+
+// Set minimum velocity to avoid notes off on touch down
+return max(round(touchLocationPercent * 127), 10);
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/touchVelocity" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="blackKeyXOffset(xTranslation, key)" script="// Moves C# and F# slightly left; D# and A# slightly right
+
+if (key % 12 == 1 || key % 12 == 6) {
+	return floor(xTranslation) - 2;
+} else if (key % 12 == 3 || key % 12 == 10) {
+	return ceil(xTranslation) + 2;
+} else {
+	return xTranslation;
+}
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/blackKeyXOffset" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="drawRectanglePath(canvas, x, y, w, h)" script="canvas_beginPath(canvas);
+canvas_moveTo(canvas, x, y);
+canvas_lineTo(canvas, x + w, y);
+canvas_lineTo(canvas, x + w, y + h);
+canvas_lineTo(canvas, x, y + h);
+canvas_closePath(canvas);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/drawRectanglePath" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="isWhiteKey(note)" script="return whiteKeyIndices()[note % 12];" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/isWhiteKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="needsClear(keyboard)" script="return getexpression(keyboard, 'needsClear');" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/needsClear" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="setNeedsClear(keyboard, needsClear)" script="setexpression(keyboard, 'needsClear', needsClear);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/setNeedsClear" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="whiteKeyIndices()" script="return {1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1};" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/KeyboardContainer/whiteKeyIndices" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+</WINDOW>
+<WINDOW class="Canvas" text="TransposeButtons" x="0" y="0" width="32" height="239" id="393" state="5" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" redrawMode="1" touchSupport="1">
+<VARIABLE name="rows=" value="2" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/TransposeButtons/rows" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="columns=" value="1" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/TransposeButtons/columns" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="currentHit=" value="-1" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/TransposeButtons/currentHit" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onRedraw()" script="decl this = getobject();
+
+canvas_clear(this);
+
+decl bounds = replace(getobjectrect(this), {0,0}, 0);
+decl spacing = 2;
+decl buttonW = (bounds[2] - ((columns -1) * spacing)) / columns;
+decl buttonH = (bounds[3] - ((rows - 1) * spacing)) / rows;
+
+decl radius = 4;
+decl i, tx, ty;
+for (i = 0; i < rows * columns; i++) {
+    canvas_beginPath(this);
+    canvas_moveTo(this, tx + radius, ty);
+    canvas_lineTo(this, tx + buttonW - radius, ty);
+    canvas_arcTo(this, tx + buttonW, ty, tx + buttonW, ty + radius, radius);
+    canvas_lineTo(this, tx + buttonW, ty + buttonH - radius);
+    canvas_arcTo(this, tx + buttonW, ty + buttonH, tx + buttonW - radius, ty + buttonH, radius);
+    canvas_lineTo(this, tx + radius, ty + buttonH);
+    canvas_arcTo(this, tx, ty + buttonH, tx, ty + buttonH - radius, radius);
+    canvas_lineTo(this, tx, ty + radius);
+    canvas_arcTo(this, tx, ty, tx + radius, ty, radius);
+    canvas_closePath(this);
+	canvas_addHitRegion(this, 0, i);
+	canvas_setFillStyle(this, currentHit == i? {1, 0, 1, 0} : 0.2);
+    canvas_fill(this);
+    if ((i + 1) % columns == 0) {
+        tx = 0;
+        ty += buttonH + spacing;
+    } else {
+        tx += buttonW + spacing;
+    }
+}" trigger_script="" trigger_type="255" trigger_name="onRedraw" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/TransposeButtons/onRedraw" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="onColumns()" script="canvas_refresh(getobject());" trigger_script="columns" trigger_type="0" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/TransposeButtons/onColumns" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="onRows()" script="canvas_refresh(getobject());" trigger_script="rows" trigger_type="0" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/TransposeButtons/onRows" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="init()" script="columns = 1;
+rows = 2;
+currentHit = -1;
+canvas_refresh(getobject());" trigger_script="" trigger_type="5" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/TransposeButtons/init" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="onCursorDown(cursor,hit,x,y)" script="currentHit = hit;
+canvas_refresh(getobject());
+
+
+decl octaveToAdd;
+if (columns == 1) {
+	octaveToAdd = hit == 0 ? 1 : -1;
+} else {
+	octaveToAdd = hit == 0 ? -1 : 1;
+}
+
+if (scrollsByPage) {
+	octaveToAdd *= _numberOfVisibleOctaves();
+}
+
+_setOctave(getOctave() + octaveToAdd, 1);" trigger_script="" trigger_type="255" trigger_name="onCursorDown" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/TransposeButtons/onCursorDown" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="onCursorUp(cursor,hit,x,y)" script="currentHit = -1;
+canvas_refresh(getobject());
+" trigger_script="" trigger_type="255" trigger_name="onCursorUp" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/TransposeButtons/onCursorUp" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="Container" text="Debug" x="0" y="0" width="32" height="32" id="395" state="0" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" label="1" tabbar="1" meta="0">
+<SCRIPT name="print(message)" script="MKConsole.print(message);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/Debug/print" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+</WINDOW>
+<WINDOW class="Container" text="_Software_License_Agreement" x="-100" y="-100" width="32" height="32" id="396" state="0" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" label="1" tabbar="1" meta="0">
+<SCRIPT name="Software_License_Agreement()" script="/*
+Copyright (c) 2024 MIDI Kinetics
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
+and associated documentation files (the \"Software\"), to deal in the Software without restriction, 
+including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, 
+subject to the following condition:
+
+The above copyright notice and this permission notice shall be included 
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, I
+NCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS 
+OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+IN THE SOFTWARE.
+*/" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/_Software_License_Agreement/Software_License_Agreement" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+</WINDOW>
+<SCRIPT name="onLoad()" script="decl bounds = replace(getobjectrect(getparent(_)), {0,0}, 0) - {0, 0, 16, 16};
+setobjectrect(getobject(), {-8, -8, bounds[2] + 16, bounds[3] + 16});
+TransposeButtons.init();
+layoutSubviews();
+KeyboardContainer.init();
+init();
+reload();
+" trigger_script="" trigger_type="5" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/onLoad" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="layoutSubviews()" script="decl bounds = replace(getobjectrect(getparent(_)), {0, 0}, 0) - {0, 0, 16, 16};
+
+if (!showsTransposeButtons) {
+	show(TransposeButtons, 0);
+	setobjectrect(KeyboardContainer, bounds);
+	return;
+}
+
+show(TransposeButtons, 1);
+
+decl vStackButtonsW = 150;
+decl vStackButtonsH = 28;
+decl hStackButtonW = 32;
+decl hStackButtonsH = bounds[3];
+
+decl numPositions = 6;
+decl position = abs(transposeButtonsPosition) % numPositions;
+
+decl buttonRect, buttonConfig, keyboardContainerRect;
+
+if (position == 0) { // topLeft
+    buttonRect = {bounds[0], bounds[1], vStackButtonsW, vStackButtonsH};
+    buttonConfig = {2, 1};
+    keyboardContainerRect = {
+        bounds[0] - 8, 
+        bounds[1] + vStackButtonsH, 
+        bounds[2] + 16, 
+        bounds[3] + 16 - (bounds[1] + vStackButtonsH)
+    };
+} else if (position == 1) { // topRight
+    buttonRect = {bounds[2] - vStackButtonsW, bounds[1], vStackButtonsW, vStackButtonsH};
+    buttonConfig = {2, 1};
+    keyboardContainerRect = {
+        bounds[0] - 8, 
+        bounds[1] + vStackButtonsH, 
+        bounds[2] + 16, 
+        bounds[3] + 16 - (bounds[1] + vStackButtonsH)
+    };
+} else if (position == 2) { // right
+    buttonRect = {bounds[2] - hStackButtonW, bounds[1], hStackButtonW, hStackButtonsH};
+    buttonConfig = {1, 2};
+    keyboardContainerRect = {
+        bounds[0] - 8, 
+        bounds[1] - 8, 
+        bounds[2] - hStackButtonW + 8, 
+        bounds[3] + 16
+    };
+} else if (position == 3) { // bottomRight
+    buttonRect = {bounds[2] - vStackButtonsW, bounds[3] - vStackButtonsH, vStackButtonsW, vStackButtonsH};
+    buttonConfig = {2, 1};
+    keyboardContainerRect = {
+        bounds[0] - 8, 
+        bounds[1] - 8, 
+        bounds[2] + 16, 
+        bounds[3] + 8 - vStackButtonsH
+    };
+} else if (position == 4) { // bottomLeft
+    buttonRect = {bounds[0], bounds[3] - vStackButtonsH, vStackButtonsW, vStackButtonsH};
+    buttonConfig = {2, 1};
+    keyboardContainerRect = {
+        bounds[0] - 8, 
+        bounds[1] - 8, 
+        bounds[2] + 16, 
+        bounds[3] + 8 - vStackButtonsH
+    };
+} else if (position == 5) { // left
+    buttonRect = {bounds[0], bounds[1], hStackButtonW, hStackButtonsH};
+    buttonConfig = {1, 2};
+    keyboardContainerRect = {
+        bounds[0] + hStackButtonW, 
+        bounds[1] - 8, 
+        bounds[2] + 8 - hStackButtonW, 
+        bounds[3] + 16
+    };
+}
+
+setobjectrect(TransposeButtons, buttonRect);
+TransposeButtons.columns = buttonConfig[0];
+TransposeButtons.rows = buttonConfig[1];
+setobjectrect(KeyboardContainer, keyboardContainerRect);
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/layoutSubviews" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="_getOctave()" script="return floor(KeyboardContainer.OctaveScroller.getOctave());" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/_getOctave" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="_numberOfVisibleOctaves()" script="return min(max(numberOfVisibleOctaves, 1), 3);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/_numberOfVisibleOctaves" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="_reload()" script="layoutSubviews();
+KeyboardContainer.reload();" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/_reload" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="_setOctave(newOctave, animated)" script="KeyboardContainer.OctaveScroller.scroll(newOctave, animated);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/_setOctave" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="_pressedKeys()" script="if (KeyboardContainer.CursorList.isEmpty()) {
+	return -1;
+}
+return KeyboardContainer.CursorList.pressedKeys();" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/_pressedKeys" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="_refreshKey(note)" script="note = floor(note);
+if (note < 0 || note > 127) return;
+KeyboardContainer.KeyRedrawList.add(note);
+KeyboardContainer.redrawAll(0);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/_refreshKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="_colorForKey(note, velocity)" script="decl color = colorForKey(note, velocity);
+if (sizeof(color) == 4) {
+	return color;
+}
+
+decl isWhiteKey = KeyboardContainer.isWhiteKey(note);
+if (velocity > 0) {
+	return isWhiteKey ? {1, 0, 1, 0} : {1, 0, 0.8, 0};
+} else {
+	return isWhiteKey ? {0.99} : {0.2};
+}" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/_colorForKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="_highlightKey(note, velocity)" script="note = floor(note);
+if (note < 0 || note > 127) return;
+
+velocity = min(max(floor(velocity), 0), 127);
+
+if (velocity > 0) {
+	decl cursor = floor(rand() * 100000);
+	KeyboardContainer.CursorList.add(cursor, note, velocity);
+	KeyboardContainer.KeyRedrawList.add(note);
+	KeyboardContainer.redrawAll(0);
+} else {
+	KeyboardContainer.CursorList.remove(note);
+	KeyboardContainer.KeyRedrawList.add(note);
+	KeyboardContainer.redrawAll(0);
+}
+
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/_highlightKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="_titleColorForKey(note, velocity)" script="decl color = titleColorForKey(note, velocity);
+if (sizeof(color) == 4) {
+	return color;
+} 
+if (KeyboardContainer.isWhiteKey(note)) {
+	return {0};
+} else {
+	return {1};
+}" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/_titleColorForKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="_velocityForKey(note)" script="note = floor(note);
+if (note < 0 || note > 127) return 0;
+return KeyboardContainer.CursorList.velocityForKey(note);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/_velocityForKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="_releaseAllKeys()" script="KeyboardContainer.releaseAllKeys();" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/_releaseAllKeys" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="_titleForKey(note, velocity)" script="decl title = titleForKey(note, velocity);
+if (sizeof(title) > 1) return 0;
+if (title == 0) {
+	return '';
+} else {
+	return '' + title;
+}
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/_titleForKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="_canPressKey(note, velocity)" script="return canPressKey(note, velocity);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/_canPressKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="_canReleaseKey(note, velocity)" script="return canReleaseKey(note, velocity);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/_canReleaseKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="_fontSizeForKey(note, velocity)" script="return fontSizeForKey(note, velocity);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/_/_fontSizeForKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+</WINDOW>
+<VARIABLE name="transposeButtonsPosition=" value="5" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/transposeButtonsPosition" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="numberOfVisibleOctaves=" value="1" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/numberOfVisibleOctaves" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="170,1,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="scrollsByPage=" value="0" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/scrollsByPage" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="190,1,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="showsTransposeButtons=" value="1" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/showsTransposeButtons" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,29313,28001" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="setOctave(octave, animated)" script="/**
+ * Sets the piano's octave, optionally specifying if the change should be animated.
+ *
+ * @param (int) octave - The target octave to set, within the range of -2 to 8.
+ * @param (int) animated - If true (1), the change will be animated; if false (0), the change will be immediate.
+ *
+ * Example usage:
+ * MKPiano.setOctave(4, 1); // Sets the octave to 4 with animation
+ * MKPiano.setOctave(-1, 0); // Sets the octave to -1 without animation
+ */
+
+
+_._setOctave(octave, animated); // DO NOT DELETE THIS LINE
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/setOctave" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="getOctave()" script="/**
+ * Returns the current octave of the keyboard, in the range of -2 to 8.
+ *
+ * @return (int) The current octave of the keyboard.
+ *
+ * Example usage: Get the current octave of the keyboard.
+ *
+ * decl currentOctave = MKPiano.getOctave();
+ */
+
+
+return _._getOctave(); // DO NOT DELETE THIS LINE
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/getOctave" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="didReleaseKey(note)" script="/**
+ * Place code here to be executed when a key is released, e.g., send a MIDI note off message.
+ *
+ * @param (int) note - The MIDI note number of the key that was released.
+ *
+ * Example usage: Sending a MIDI note-off message when a key is released.
+ *
+ * noteout(0, note, 0, 1);
+ *
+ */
+
+
+
+// place code here
+
+// Example: Sends a note-off message on Lemur Target 0 via MIDI channel 1. 
+// You can delete this if you want different behavior.
+
+noteout(0, note, 0, 1); 
+setattribute(Instructions.KeyReleasedLabel, 'content', 'Key ' + note + ' was released');" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/didReleaseKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="didPressKey(note, velocity)" script="/**
+ * Place code here to be executed when a key is pressed, e.g., send a MIDI note message.
+ *
+ * @param (int) note - The MIDI note number of the key that was pressed.
+ * @param (int) velocity - The velocity at which the key is pressed.
+ *
+ * @return void
+ *
+ * Example usage: Sending a MIDI note message when a key is pressed.
+ *
+ * noteout(0, note, velocity, 1);
+ */
+
+
+
+// place code here
+
+// Example: Sends a note-on message on Lemur Target 0 via MIDI channel 1. 
+// You can delete this is you want different behavior.
+
+noteout(0, note, velocity, 1); 
+setattribute(Instructions.KeyPressedLabel, 'content', 'Key ' + note + ' was pressed with velocity ' + velocity);" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/didPressKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="colorForKey(note, velocity)" script="/**
+ * Return a custom color for a key at a given velocity.
+ *
+ * @param (int) note - The MIDI note number of the key.
+ * @param (int) velocity - The velocity at which the key is pressed. A value of 0 indicates the key is released.
+ *
+ * @return (array|int) An custom color in the format {A, R, G, B}, or 0 for the default color.
+ *
+ * Example usage: Returning green when the key is pressed (velocity > 0), or red when released (velocity == 0).
+ *
+ * if (velocity > 0) {
+ *     return {1, 0, 1, 0}; // Green color when pressed
+ * } else {
+ *     return {1, 1, 0, 0}; // Red color when released
+ * }
+ */
+
+
+
+// place code here
+
+if (Instructions.RandomKeyColorSwitch.x == 1) {
+	return {1, rand(), rand(), rand()};
+} else {
+	return 0;
+}
+
+return 0; // Returns the default color. You can delete this and return your own color." trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/colorForKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="titleColorForKey(note, velocity)" script="/**
+ * Return a custom color for a key at a given velocity.
+ *
+ * @param (int) note - The MIDI note number of the key.
+ * @param (int) velocity - The velocity at which the key is pressed. A value of 0 indicates the key is released.
+ *
+ * @return (array|int) A custom color in the format {A, R, G, B}, or 0 for the default color.
+ *
+ * Example usage: Returning green when the key is pressed (velocity > 0), or red when released (velocity == 0).
+ *
+ * if (velocity > 0) {
+ *     return {1, 0, 1, 0}; // Green color when pressed
+ * } else {
+ *     return {1, 1, 0, 0}; // Red color when released
+ * }
+ */
+
+
+
+// place code here
+
+if (Instructions.RandomTitleColorSwitch.x == 1) {
+	return {1, rand(), rand(), rand()};
+} else {
+	return 0;
+}
+
+
+
+return 0; // Returns default color. You can delete this and return your own color." trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/titleColorForKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="refreshKey(note)" script="/**
+ * Tells the keyboard that it needs to redraw a single key. Use this as a more optimized
+ * version of `reload()` when you only need to redraw a single key.
+ *
+ * @param (int) note - The MIDI note number of the key that needs to be redrawn.
+ *
+ * Example usage: Refresh the display of a single key.
+ *
+ * MKPiano.refreshKey(60); // Refreshes the key with MIDI note number 60 (Middle C)
+ */
+
+
+_._refreshKey(note); // DO NOT DELETE THIS LINE
+
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/refreshKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="pressedKeys()" script="/**
+ * Gets the currently pressed keys on the keyboard.
+ *
+ * @return (array|int) An array of MIDI note numbers representing the keys that are currently pressed,
+ *                     or -1 if no keys are pressed.
+ *
+ * Example usage: Loop over the currently pressed keys and send a note.
+ *                Uses `velocityForKey(note)` to get the current velocity.
+ *
+ * decl keys = MKPiano.pressedKeys();
+ * if (keys != -1) { // check for no keys
+ *     decl i;
+ *     for (i = 0; i < sizeof(keys); i++) {
+ *         decl velocity = velocityForKey(keys[i]);
+ *         noteout(0, keys[i], velocity, 1);
+ *     }
+ * }
+ */
+
+
+return _._pressedKeys(); // DO NOT DELETE THIS LINE" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/pressedKeys" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="reload()" script="/**
+ * Informs the piano that it needs to be redrawn.
+ *
+ * Call this whenever you change one of the keyboard's settings, such as `numberOfVisibleOctaves`,
+ * or if you need all the keys to be reloaded with new data.
+ *
+ * Try not to call this script too frequently as it will impact performance. Rather, perform
+ * all your configuration first, and then call reload only once to batch all the changes together.
+ *
+ * Example usage: 
+ * 
+ * MKPiano.transposeButtonsPosition = 1;
+ * MKPiano.numberOfVisibleOctaves = 2;
+ * MKPiano.reload();
+ *
+ */
+
+
+_._reload(); // DO NOT DELETE THIS LINE
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/reload" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="velocityForKey(note)" script="/**
+ * Returns the current velocity of the specified key.
+ *
+ * @param (int) note - The MIDI note number of the key.
+ *
+ * @return (int) The current velocity of the specified key.
+ *
+ * Example usage: Get the velocity of a specific key and use it in a condition.
+ *
+ * decl velocity = MKPiano.velocityForKey(60); // Get the velocity for Middle C (MIDI note 60)
+ * if (velocity > 0) {
+ *     // Key is currently pressed with some velocity
+ * } else {
+ *     // Key is not pressed
+ * }
+ */
+
+
+return _._velocityForKey(note); // DO NOTE DELETE THIS LINE" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/velocityForKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="releaseAllKeys()" script="/**
+ * Releases all currently pressed keys on the keyboard.
+ *
+ * Example usage: Release all keys when resetting the keyboard state.
+ *
+ * MKPiano.releaseAllKeys(); 
+ */
+
+
+_._releaseAllKeys(); // DO NOT DELETE THIS LINE
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/releaseAllKeys" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="titleForKey(note, velocity)" script="/**
+ * Return a custom title to be displayed on each key.
+ *
+ * @param (int) note - The MIDI note number of the key.
+ * @param (int) velocity - The velocity at which the key is highlighted. A value of 0 indicates the key is released.
+ *
+ * @return (string|int) The custom title to be displayed on the key, or 0 for no title.
+ *
+ * Example usage: Returning the note name and octave for the given MIDI note:
+ *
+ * decl noteNames = {'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'};
+ * decl octave = floor(note / 12) - 2;
+ * return '' + noteNames[note % 12] + '' + octave;
+ */
+
+
+
+// place code here
+
+if (Instructions.CustomTitlesSwitch.x == 1) {
+	return '' + note + ' (' + velocity + ')';
+} else {
+	return 0;
+}
+
+return 0; // Returns no title. You can delete this and return your own text." trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/titleForKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="canPressKey(note, velocity)" script="/**
+ * Determines whether a key can be pressed based on the note and velocity.
+ *
+ * @param (int) note - The MIDI note number of the key.
+ * @param (int) velocity - The velocity at which the key is being pressed.
+ *
+ * @return (int) Return 1 if the key can be pressed, or 0 if the touch should be blocked.
+ *
+ * Example usage: Allow pressing only keys below note 12 (the first octave).
+ *
+ * if (note < 12) {
+ *     return 1; // Allow key press
+ * } else {
+ *     return 0; // Block key press
+ * }
+ */
+
+
+
+// place code here
+
+return Instructions.AllowPressesSwitch.x;
+
+
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/canPressKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="canReleaseKey(note, velocity)" script="/**
+ * Determines whether a key can be released based on the note and the velocity at which it was pressed.
+ *
+ * @param (int) note - The MIDI note number of the key.
+ * @param (int) velocity - The velocity at which the key was pressed.
+ *
+ * @return (int) Return 1 if the key can be released, or 0 if the release should be blocked.
+ *
+ * Example usage: Allow releasing only keys below note 12 (the first octave).
+ *
+ * if (note < 12) {
+ *     return 1; // Allow key release
+ * } else {
+ *     return 0; // Block key release
+ * }
+ */
+
+
+// place code here
+
+return Instructions.AllowReleasesSwitch.x;
+
+
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/canReleaseKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="highlightKey(note, velocity)" script="/**
+ * Highlights a specific key on the keyboard with a given velocity. This can be used to visually indicate
+ * that a key is being pressed or has been pressed with a certain force.
+ *
+ * @param (int) note - The MIDI note number of the key to be highlighted.
+ * @param (int) velocity - The velocity at which the key is highlighted. A value of 0 indicates the key is released.
+ *
+ * Example usage: Highlight a key with a specific velocity.
+ *
+ * MKPiano.highlightKey(60, 100); // Highlights the key with MIDI note number 60 (Middle C) with a velocity of 100
+ */
+
+
+_._highlightKey(note, velocity); // DO NOT DELETE THIS LINE
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/highlightKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="fontSizeForKey(note, velocity)" script="/**
+ * Returns the font size for the title of a key based on the note and the velocity at which it was pressed.
+ *
+ * @param (int) note - The MIDI note number of the key.
+ * @param (int) velocity - The velocity at which the key was pressed.
+ *
+ * @return (int) The font size for the key's title.
+ *
+ * Example usage: Set the font size based on the note and velocity.
+ *
+ * if (velocity > 100) {
+ *     return 24; // Larger font size for high velocity
+ * } else {
+ *     return 12; // Smaller font size for low velocity
+ * }
+ */
+
+
+// place code here
+
+return 10; // Default font size. You can delete this and provide your own logic.
+" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/fontSizeForKey" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+<SCRIPT name="init()" script="/**
+ * Initializes the piano. Place code here to set up the initial settings of the piano.
+ *
+*/
+
+numberOfVisibleOctaves = 1;
+scrollsByPage = 0;
+showsTransposeButtons = 1;
+transposeButtonsPosition = 5;" trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/MKPiano/init" midi_message="0x90,0x90,0,0" midi_target="-1" flag="0"/>
+</WINDOW>
+<WINDOW class="Container" text="Instructions" x="24" y="283" width="804" height="378" id="55" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8388608" label="1" tabbar="1" meta="1">
+<WINDOW class="Tab" text="1. Configuration" x="0" y="0" width="788" height="330" state="1" group="0" font="tahoma,11,0" >
+<WINDOW class="Switches" text="VisibleOctavesSwitches" x="547" y="110" width="222" height="32" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" bitmap_off="" bitmap_on="" capture="1" color="865343,1596013" column="3" label="0" multicolor="0" multilabel="1" paint="0" radio="1" row="1" style="0">
+<PARAM name="x=" value="1.000000,0.000000,0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/Instructions/VisibleOctavesSwitches/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/VisibleOctavesSwitches/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onX()" script="MKPiano.numberOfVisibleOctaves = firstof(x) + 1;
+MKPiano.reload();" trigger_script="x" trigger_type="0" trigger="1" clock="0" clock_div="4" osc_message="/Instructions/VisibleOctavesSwitches/onX" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="onLoad()" script="setattribute(getobject(), 'labels', {'1', '2', '3'});" trigger_script="" trigger_type="5" trigger="1" clock="0" clock_div="4" osc_message="/Instructions/VisibleOctavesSwitches/onLoad" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="Switches" text="TransposeButtonsPositionSwitches" x="419" y="164" width="350" height="32" id="1" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" bitmap_off="" bitmap_on="" capture="1" color="865343,1596013" column="6" label="0" multicolor="0" multilabel="1" paint="0" radio="1" row="1" style="0">
+<PARAM name="x=" value="0.000000,0.000000,0.000000,0.000000,0.000000,1.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/Instructions/TransposeButtonsPositionSwitches/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/TransposeButtonsPositionSwitches/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onX()" script="MKPiano.transposeButtonsPosition = firstof(x);
+MKPiano.reload();" trigger_script="x" trigger_type="0" trigger="1" clock="0" clock_div="4" osc_message="/Instructions/TransposeButtonsPositionSwitches/onX" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="onLoad()" script="setattribute(getobject(), 'labels', {'0', '1', '2', '3', '4', '5'});" trigger_script="" trigger_type="5" trigger="1" clock="0" clock_div="4" osc_message="/Instructions/TransposeButtonsPositionSwitches/onLoad" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="CustomButton" text="ShowsTransposeButtonsSwitch" x="501" y="214" width="268" height="48" id="396" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="0" bitmap="0,0" capture="1" color="865343,1596013" label_off="showsTransposeButtons" label_on="showsTransposeButtons" outline="1">
+<PARAM name="x=" value="1.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/Instructions/ShowsTransposeButtonsSwitch/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/ShowsTransposeButtonsSwitch/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onX()" script="MKPiano.showsTransposeButtons = x;
+MKPiano.reload();" trigger_script="x" trigger_type="0" trigger="1" clock="0" clock_div="4" osc_message="/Instructions/ShowsTransposeButtonsSwitch/onX" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="CustomButton" text="ScrollsByPageSwitch" x="501" y="274" width="268" height="48" id="397" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="0" bitmap="0,0" capture="1" color="865343,1596013" label_off="scrollsByPage" label_on="scrollsByPage" outline="1">
+<PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/Instructions/ScrollsByPageSwitch/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/ScrollsByPageSwitch/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onX()" script="MKPiano.scrollsByPage = x;" trigger_script="x" trigger_type="0" trigger="1" clock="0" clock_div="4" osc_message="/Instructions/ScrollsByPageSwitch/onX" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text" x="16" y="0" width="710" height="48" id="398" state="85" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="MKPiano comes with a number of configuration options for determining the basic functionality of the piano. Check out the various `onX` scripts of the switches below to see a code example.">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text2" x="16" y="101" width="360" height="48" id="399" state="213" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" content="1) Set the number of visible octaves on the screen:">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text2/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text3" x="16" y="157" width="360" height="72" id="400" state="85" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" content="2) Set the position of the transposition buttons. 0 = top left, 1 = top right, 2 = right, 3 = bottom right, 4 = bottom left, 5 = left:">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text3/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text5" x="9" y="48" width="772" height="48" id="402" state="213" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8421376" content="Important: whenever you change one of the piano's configuration options, you must also call `reload()` to inform the piano that it needs to be redrawn. You will see that in the scripts below.">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text5/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text6" x="16" y="229" width="360" height="33" id="403" state="85" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" content="3) Show or hide the transpose buttons:">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text6/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text7" x="16" y="274" width="430" height="39" id="404" state="85" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" content="3) Set the scrolling behavior for the transpose buttons, either scrolling by page or by octave.">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text7/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+</WINDOW>
+<WINDOW class="Tab" text="2. Customizing Keys" x="0" y="0" width="788" height="330" id="2" state="0" group="0" font="tahoma,11,0" >
+<WINDOW class="CustomButton" text="CustomTitlesSwitch" x="519" y="120" width="233" height="52" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="0" bitmap="0,0" capture="1" color="865343,1596013" label_off="Custom Title" label_on="Custom Title" outline="1">
+<PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/Instructions/CustomTitlesSwitch/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/CustomTitlesSwitch/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onX()" script="MKPiano.reload();" trigger_script="x" trigger_type="0" trigger="1" clock="0" clock_div="4" osc_message="/Instructions/CustomTitlesSwitch/onX" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="CustomButton" text="RandomKeyColorSwitch" x="519" y="186" width="233" height="52" id="1" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="0" bitmap="0,0" capture="1" color="865343,1596013" label_off="Random Key Color" label_on="Random Key Color" outline="1">
+<PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/Instructions/RandomKeyColorSwitch/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/RandomKeyColorSwitch/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onX()" script="MKPiano.reload();" trigger_script="x" trigger_type="0" trigger="1" clock="0" clock_div="4" osc_message="/Instructions/RandomKeyColorSwitch/onX" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="CustomButton" text="RandomTitleColorSwitch" x="519" y="253" width="233" height="52" id="2" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="0" bitmap="0,0" capture="1" color="865343,1596013" label_off="Random Title Color" label_on="Random Title Color" outline="1">
+<PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/Instructions/RandomTitleColorSwitch/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/RandomTitleColorSwitch/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onX()" script="MKPiano.reload();" trigger_script="x" trigger_type="0" trigger="1" clock="0" clock_div="4" osc_message="/Instructions/RandomTitleColorSwitch/onX" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text4" x="13" y="8" width="775" height="46" id="398" state="85" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="The piano has a variety of scripts allowing you to to change the style of each key. For example you can add some text to each key by overriding `titleForKey`.">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text4/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text8" x="13" y="67" width="729" height="43" id="399" state="85" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="Take a look inside the piano at each of the following scripts to see what happens when one of the switches is toggled. ">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text8/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text9" x="13" y="134" width="488" height="24" id="400" state="85" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="1) titleForKey(note, velocity)">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text9/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text10" x="13" y="199" width="488" height="24" id="401" state="85" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="2) colorForKey(note, velocity)">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text10/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text11" x="13" y="266" width="488" height="24" id="402" state="85" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="3) titleColorForKey(note, velocity)">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text11/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+</WINDOW>
+<WINDOW class="Tab" text="3. Responding to Touches" x="0" y="0" width="788" height="330" id="3" state="0" group="0" font="tahoma,11,0" >
+<WINDOW class="Text" text="Text12" x="4" y="0" width="775" height="37" id="398" state="85" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="You can react to key presses by placing custom code inside the scripts `didPressKey` and `didReleaseKey`. They will be executed in response to touch events.">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text12/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text13" x="4" y="128" width="420" height="37" id="399" state="85" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="1) didPressKey(note, velocity)">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text13/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text14" x="4" y="188" width="424" height="37" id="400" state="85" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="2) didReleaseKey(note)">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text14/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text15" x="4" y="51" width="771" height="60" id="401" state="85" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="The piano comes pre-loaded with code to send a MIDI note, but you can delete that and place any code you want. Here, we have added some extra code to show the note on the labels. Take a look at the following scripts inside the piano:">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text15/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="KeyPressedLabel" x="454" y="117" width="296" height="48" id="402" state="241" group="0" font="tahoma,14,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" content="">
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/KeyPressedLabel/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onLoad()" script="setattribute(getobject(), 'content', '');" trigger_script="" trigger_type="5" trigger="1" clock="0" clock_div="4" osc_message="/Instructions/KeyPressedLabel/onLoad" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="Text" text="KeyReleasedLabel" x="454" y="183" width="296" height="48" id="403" state="241" group="0" font="tahoma,14,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" content="">
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/KeyReleasedLabel/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onLoad()" script="setattribute(getobject(), 'content', '');" trigger_script="" trigger_type="5" trigger="1" clock="0" clock_div="4" osc_message="/Instructions/KeyReleasedLabel/onLoad" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text16" x="4" y="248" width="438" height="69" id="404" state="85" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="You can also get an array of the currently pressed keys through the `pressedKeys()` script. If no keys are pressed, this script will return -1. Take a look at this Monitor widget: ">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text16/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Monitor" text="Monitor" x="454" y="247" width="305" height="58" id="406" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="7240575" label="0" precision="3" unit="" value="1">
+<VARIABLE name="value=MKPiano.pressedKeys()" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Monitor/value" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+</WINDOW>
+<WINDOW class="Tab" text="4. Programmatic Control" x="0" y="0" width="788" height="330" id="1" state="0" group="0" font="tahoma,11,0" >
+<WINDOW class="Text" text="Text17" x="9" y="0" width="775" height="39" id="398" state="85" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="You can also control the piano programmatically by code. Take a look at the scripts inside the following buttons:">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text17/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Pads" text="Pads2" x="285" y="39" width="392" height="40" id="399" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" bitmap_off="" bitmap_on="" capture="1" color="865343,1596013" column="11" label="0" multicolor="0" multilabel="1" row="1" style="0">
+<PARAM name="x=" value="0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/Instructions/Pads2/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="attack=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Pads2/attack" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="decay=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Pads2/decay" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="sustain=1" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Pads2/sustain" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="release=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Pads2/release" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="hold=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Pads2/hold" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Pads2/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onPadsPressed(indices)" script="MKPiano.setOctave(indices - 2, AnimatedSwitch.x);" trigger_script="" trigger_type="255" trigger_name="onPressed" trigger="1" clock="0" clock_div="4" osc_message="/Instructions/Pads2/onPadsPressed" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="onLoad()" script="setattribute(getobject(), 'labels', {
+	'-2', '-1', '0', '1', '2', '3', '4', '5', '6' ,'7', '8'
+});" trigger_script="" trigger_type="5" trigger="1" clock="0" clock_div="4" osc_message="/Instructions/Pads2/onLoad" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="CustomButton" text="AnimatedSwitch" x="688" y="35" width="97" height="48" id="400" state="241" group="0" font="tahoma,15,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="0" bitmap="0,0" capture="1" color="865343,1596013" label_off="animated" label_on="animated" outline="1">
+<PARAM name="x=" value="1.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/Instructions/AnimatedSwitch/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/AnimatedSwitch/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text18" x="7" y="39" width="284" height="48" id="401" state="213" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="1) setOctave(octave, animated)">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text18/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text19" x="7" y="89" width="275" height="43" id="402" state="213" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="2) highlightKey(note, velocity)">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text19/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Pads" text="Pads3" x="284" y="95" width="500" height="35" id="403" state="1" group="0" font="tahoma,10,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" bitmap_off="" bitmap_on="" capture="1" color="865343,1596013" column="7" label="0" multicolor="0" multilabel="1" row="1" style="0">
+<PARAM name="x=" value="0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/Instructions/Pads3/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="attack=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Pads3/attack" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="decay=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Pads3/decay" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="sustain=1" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Pads3/sustain" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="release=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Pads3/release" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="hold=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Pads3/hold" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Pads3/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onPadPressed(indices)" script="// Scroll to middle C and show 2 octaves
+// so that the demo will be visible
+
+if (MKPiano.getOctave() != 3) {
+	MKPiano.setOctave(3, 0);
+}
+
+if (MKPiano.numberOfVisibleOctaves != 2) {
+	MKPiano.numberOfVisibleOctaves = 2;
+	MKPiano.reload();
+}
+
+
+// Get the notes for the chord based on the pad index
+decl notes = notesForPadIndex(indices);
+
+// Loop through each note and highlight it by sending a non-zero velocity,
+// then output a MIDI note message
+decl i;
+for (i = 0; i < sizeof(notes); i++) {
+	MKPiano.highlightKey(notes[i], 127);
+	noteout(0, notes[i], 127, 1);
+}" trigger_script="" trigger_type="255" trigger_name="onPressed" trigger="1" clock="0" clock_div="4" osc_message="/Instructions/Pads3/onPadPressed" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="onPadReleased(indices)" script="// Get the notes for the chord based on the pad index
+decl notes = notesForPadIndex(indices);
+
+// Loop through each note and unhighlight it by sending velocity 0,
+// then output a note-off message.
+decl i;
+for (i = 0; i < sizeof(notes); i++) {
+	MKPiano.highlightKey(notes[i], 0);
+	noteout(0, notes[i], 0, 1);
+}" trigger_script="" trigger_type="255" trigger_name="onReleased" trigger="1" clock="0" clock_div="4" osc_message="/Instructions/Pads3/onPadReleased" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="notesForPadIndex(indices)" script="if (indices == 0) {
+	return {60, 64, 67}; // C major
+} else if (indices == 1) {
+	return {62, 65, 69}; // D minor
+} else if (indices == 2) {
+	return {64, 67, 71}; // E minor
+} else if (indices == 3) {
+	return {65, 69, 72}; // F major
+} else if (indices == 4) {
+	return {67, 71, 74}; // G major
+} else if (indices == 5) {
+	return {69, 72, 76}; // A minor
+} else if (indices == 6) {
+	return {71, 74, 77}; // B minor
+} " trigger_script="" trigger_type="4" trigger="1" clock="0" clock_div="4" osc_message="/Instructions/Pads3/notesForPadIndex" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+<SCRIPT name="onLoad()" script="setattribute(getobject(), 'labels', {
+	'C', 'D-', 'E', 'F', 'G', 'A-', 'Bdim'
+});" trigger_script="" trigger_type="5" trigger="1" clock="0" clock_div="4" osc_message="/Instructions/Pads3/onLoad" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text20" x="9" y="145" width="738" height="55" id="404" state="85" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="The piano will still respond to touches even though you are controlling it programmatically. However you can completely disable touches to take full programmatic control. Take a look at the following scripts inside the piano:">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text20/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text21" x="4" y="268" width="253" height="34" id="405" state="213" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="4) canReleaseKey(note, velocity)">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text21/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text22" x="7" y="214" width="284" height="23" id="406" state="213" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="3) canPressKey(note, velocity)">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text22/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="CustomButton" text="AllowPressesSwitch" x="284" y="199" width="177" height="52" id="407" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="0" bitmap="0,0" capture="1" color="865343,1596013" label_off="Allow Presses" label_on="Allow Presses" outline="1">
+<PARAM name="x=" value="1.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/Instructions/AllowPressesSwitch/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/AllowPressesSwitch/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="CustomButton" text="AllowReleasesSwitch" x="284" y="259" width="177" height="52" id="408" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="0" bitmap="0,0" capture="1" color="865343,1596013" label_off="Allow Releases" label_on="Allow Releases" outline="1">
+<PARAM name="x=" value="1.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/Instructions/AllowReleasesSwitch/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/AllowReleasesSwitch/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="Text" text="Text23" x="494" y="196" width="277" height="55" id="409" state="85" group="0" font="tahoma,14,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8355711" content="5) If keys ever get stuck you can release all the keys with `releaseAllKeys()`">
+<VARIABLE name="light=" value="0.000000" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/Text23/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+</WINDOW>
+<WINDOW class="CustomButton" text="AllowReleasesSwitch2" x="494" y="259" width="177" height="52" id="410" state="241" group="0" font="tahoma,20,0" send="1" osc_target="-2" midi_target="-2" kbmouse_target="-2" behavior="1" bitmap="0,0" capture="1" color="865343,1596013" label_off="Release All Keys" label_on="Release All Keys" outline="1">
+<PARAM name="x=" value="0.000000" send="17" osc_target="0" osc_trigger="1" osc_message="/Instructions/AllowReleasesSwitch2/x" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" osc_scale="0.000000,1.000000" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<VARIABLE name="light=0" send="0" osc_target="0" osc_trigger="1" osc_message="/Instructions/AllowReleasesSwitch2/light" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
+<SCRIPT name="onX()" script="MKPiano.releaseAllKeys();" trigger_script="x" trigger_type="0" trigger="2" clock="0" clock_div="4" osc_message="/Instructions/AllowReleasesSwitch2/onX" midi_message="0x90,0x90,0,0" midi_target="-1" flag="1"/>
+</WINDOW>
+</WINDOW>
+</WINDOW>
+</WINDOW>
+</JZML>
