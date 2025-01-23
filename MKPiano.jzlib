@@ -1,6 +1,6 @@
 <JZML>
-<WINDOW class="Container" text="MKPiano" x="0" y="0" width="616" height="186" id="50" state="5" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="20480" label="1" tabbar="1" meta="0">
-<WINDOW class="Container" text="_" x="-8" y="-8" width="616" height="186" id="1" state="5" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" label="1" tabbar="1" meta="0">
+<WINDOW class="Container" text="MKPiano" x="0" y="0" width="616" height="186" id="50" state="5" group="0" font="tahoma,10,0" send="128" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="20480" label="1" tabbar="1" meta="0">
+<WINDOW class="Container" text="_" x="-8" y="-8" width="616" height="186" id="1" state="7" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="1596013" label="1" tabbar="1" meta="0">
 <WINDOW class="Container" text="KeyboardContainer" x="32" y="-8" width="576" height="186" id="36" state="5" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" color="8388608" label="1" tabbar="1" meta="0">
 <WINDOW class="Canvas" text="KeyboardCanvas1" x="0" y="0" width="1120" height="170" id="7" state="5" group="0" font="tahoma,10,0" send="0" osc_target="-2" midi_target="-2" kbmouse_target="-2" capture="1" redrawMode="1" touchSupport="2">
 <VARIABLE name="numOctaves=" value="2" send="0" osc_target="0" osc_trigger="1" osc_message="/MKPiano/_/KeyboardContainer/KeyboardCanvas1/numOctaves" midi_target="-1" midi_trigger="1" midi_message="0x90,0x90,0,0" midi_scale="0,16383" kbmouse_target="-1" kbmouse_trigger="1" kbmouse_message="0,0,0" kbmouse_scale="0,1,0,1"/>
